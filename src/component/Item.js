@@ -1,0 +1,20 @@
+import React from 'react'
+import Box from '@material-ui/core/Box'
+
+function Item({delay, person}) {
+	return (
+		<Box
+			className={delay && "square"}
+			style={ delay && { animationDelay: `${delay}s` }}
+			color="primary.main"
+			bgcolor="background.paper"
+			fontFamily="h6.fontFamily"
+			fontSize={{ xs: 'h6.fontSize', sm: 'h4.fontSize', md: 'h3.fontSize' }}
+			p={{ xs: 2, sm: 3, md: 4 }}
+		>
+			{`${person.name} ${person.sername}`}
+		</Box>
+	)
+}
+
+export default Item
