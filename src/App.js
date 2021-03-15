@@ -2,7 +2,7 @@ import React from 'react'
 import Box from '@material-ui/core/Box'
 import Item from './component/Item'
 
-const people = Array(100)
+const people = Array(100) // сгенерированный массив
 	.fill(
 		{
 			name: 'Peter',
@@ -50,7 +50,7 @@ function App() {
 
 	function scrollHandler(e) {
 		if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100) {
-			setCurrentData(currentDataShow + 20)
+			setCurrentData(currentDataShow + 20) // Если мы проскролили до конца, добавлять еще 20 элементов.
 		}
 	}
 	React.useEffect(() => {
