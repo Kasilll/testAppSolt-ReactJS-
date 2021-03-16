@@ -9,7 +9,7 @@ body {
 }
 .square {
 	transform: translateY(-45px);
-  	animation: square 1000ms forwards;
+	animation: square 1000ms forwards; 
 }
 
 @keyframes square {
